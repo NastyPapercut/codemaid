@@ -270,6 +270,7 @@ namespace SteveCadwallader.CodeMaid.Logic.Cleaning
             _removeWhitespaceLogic.RemoveBlankLinesBeforeClosingBrace(textDocument);
             _removeWhitespaceLogic.RemoveBlankLinesBetweenChainedStatements(textDocument);
             _removeWhitespaceLogic.RemoveMultipleConsecutiveBlankLines(textDocument);
+            _removeWhitespaceLogic.RemoveAllBlankLines(textDocument);
 
             // Perform insertion of blank line padding cleanup.
             _insertBlankLinePaddingLogic.InsertPaddingBeforeRegionTags(regions);
@@ -360,6 +361,7 @@ namespace SteveCadwallader.CodeMaid.Logic.Cleaning
             _removeWhitespaceLogic.RemoveBlankLinesAfterOpeningBrace(textDocument);
             _removeWhitespaceLogic.RemoveBlankLinesBeforeClosingBrace(textDocument);
             _removeWhitespaceLogic.RemoveMultipleConsecutiveBlankLines(textDocument);
+            _removeWhitespaceLogic.RemoveAllBlankLines(textDocument);
 
             // Perform insertion of blank line padding cleanup.
             _insertBlankLinePaddingLogic.InsertPaddingBeforeSingleLineComments(textDocument);
@@ -389,6 +391,7 @@ namespace SteveCadwallader.CodeMaid.Logic.Cleaning
             _removeWhitespaceLogic.RemoveBlankLinesBeforeClosingTag(textDocument);
             _removeWhitespaceLogic.RemoveBlankSpacesBeforeClosingAngleBracket(textDocument);
             _removeWhitespaceLogic.RemoveMultipleConsecutiveBlankLines(textDocument);
+            _removeWhitespaceLogic.RemoveAllBlankLines(textDocument);
 
             // Perform insertion cleanup.
             _insertWhitespaceLogic.InsertBlankSpaceBeforeSelfClosingAngleBracket(textDocument);
@@ -414,6 +417,7 @@ namespace SteveCadwallader.CodeMaid.Logic.Cleaning
             _removeWhitespaceLogic.RemoveBlankLinesAtBottom(textDocument);
             _removeWhitespaceLogic.RemoveEOFTrailingNewLine(textDocument);
             _removeWhitespaceLogic.RemoveMultipleConsecutiveBlankLines(textDocument);
+            _removeWhitespaceLogic.RemoveAllBlankLines(textDocument);
 
             // Perform insertion cleanup.
             _insertWhitespaceLogic.InsertEOFTrailingNewLine(textDocument);

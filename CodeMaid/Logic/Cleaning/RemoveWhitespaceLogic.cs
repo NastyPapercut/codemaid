@@ -224,6 +224,20 @@ namespace SteveCadwallader.CodeMaid.Logic.Cleaning
             TextDocumentHelper.SubstituteAllStringMatches(textDocument, pattern, replacement);
         }
 
+        /// <summary>
+        /// Removes all blank lines from the specified text document.
+        /// </summary>
+        /// <param name="textDocument">The text document to cleanup.</param>
+        internal void RemoveAllBlankLines(TextDocument textDocument)
+        {
+            if (!Settings.Default.Cleaning_RemoveAllBlankLines) return;
+
+            string pattern = @"(?m)^[ \t]*[\r?\n]+";
+            string replacement = String.Empty;
+
+            TextDocumentHelper.SubstituteAllStringMatches(textDocument, pattern, replacement);
+        }
+
         #endregion Methods
     }
 }

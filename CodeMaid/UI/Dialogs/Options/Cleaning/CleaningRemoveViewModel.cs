@@ -31,6 +31,7 @@ namespace SteveCadwallader.CodeMaid.UI.Dialogs.Options.Cleaning
                 new SettingToOptionMapping<bool, bool>(x => ActiveSettings.Cleaning_RemoveEndOfFileTrailingNewLine, x => RemoveEndOfFileTrailingNewLine),
                 new SettingToOptionMapping<bool, bool>(x => ActiveSettings.Cleaning_RemoveEndOfLineWhitespace, x => RemoveEndOfLineWhitespace),
                 new SettingToOptionMapping<bool, bool>(x => ActiveSettings.Cleaning_RemoveMultipleConsecutiveBlankLines, x => RemoveMultipleConsecutiveBlankLines),
+                new SettingToOptionMapping<bool, bool>(x => ActiveSettings.Cleaning_RemoveAllBlankLines, x => RemoveAllBlankLines),
                 new SettingToOptionMapping<int, NoneEmptyAll>(x => ActiveSettings.Cleaning_RemoveRegions, x => RemoveRegions)
             };
         }
@@ -143,6 +144,15 @@ namespace SteveCadwallader.CodeMaid.UI.Dialogs.Options.Cleaning
         /// Gets or sets the flag indicating if multiple consecutive blank lines should be removed.
         /// </summary>
         public bool RemoveMultipleConsecutiveBlankLines
+        {
+            get { return GetPropertyValue<bool>(); }
+            set { SetPropertyValue(value); }
+        }
+
+        /// <summary>
+        /// Gets or sets the flag indicating if multiple consecutive blank lines should be removed.
+        /// </summary>
+        public bool RemoveAllBlankLines
         {
             get { return GetPropertyValue<bool>(); }
             set { SetPropertyValue(value); }
