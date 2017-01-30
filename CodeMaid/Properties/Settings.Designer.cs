@@ -1366,7 +1366,22 @@ namespace SteveCadwallader.CodeMaid.Properties {
                 this["Digging_SynchronizeOutlining"] = value;
             }
         }
-        
+
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool Finding_ClearSolutionExplorerSearch
+        {
+            get
+            {
+                return ((bool)(this["Finding_ClearSolutionExplorerSearch"]));
+            }
+            set
+            {
+                this["Finding_ClearSolutionExplorerSearch"] = value;
+            }
+        }
+
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("True")]
