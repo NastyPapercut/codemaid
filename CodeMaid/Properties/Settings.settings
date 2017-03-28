@@ -476,6 +476,9 @@
     <Setting Name="Reorganizing_RegionsRemoveExistingRegions" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
+    <Setting Name="Reorganizing_ReverseOrderByAccessLevel" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
     <Setting Name="Reorganizing_RunAtStartOfCleanup" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
