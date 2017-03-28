@@ -26,6 +26,7 @@
                     <CheckBox Content="Remove end of file trailing new line" IsChecked="{Binding RemoveEndOfFileTrailingNewLine}" />
                     <CheckBox Content="Remove end of line whitespace" IsChecked="{Binding RemoveEndOfLineWhitespace}" />
                     <CheckBox Content="Remove multiple consecutive blank lines" IsChecked="{Binding RemoveMultipleConsecutiveBlankLines}" />
+                    <CheckBox Content="Remove all blank lines" IsChecked="{Binding RemoveAllBlankLines}" />
                 </StackPanel>
             </GroupBox>
             <GroupBox Header="Regions">
